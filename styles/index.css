@@ -56,6 +56,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
 
 header,
 footer {
@@ -63,7 +68,8 @@ footer {
     color: var(--light-font-solid);
 }
 
-.banner{
+
+.banner {
     background-image: url('/img/funkos-banner.webp');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -76,6 +82,7 @@ a {
     font-family: inherit;
     color: inherit;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 ul,
@@ -83,29 +90,73 @@ ol {
     list-style: none;
 }
 
-li{
+li {
     text-transform: uppercase;
 }
 
 p {
     font-size: var(--font-medium);
+    word-wrap: break-word;
 }
 
-html {
+hr {
+    border: 2px solid var(--primary-solid);
+    max-width: 80%;
+    margin-left: 1rem;
+}
+
+/***********Coleccionables***********/
+.coleccionable, .lanzamiento {
+    max-width: 80vw;
+}
+
+
+.coleccionable__titulo {
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    text-transform: uppercase;
+}
+
+.coleccionable__texto {
+    font-family: var(--alternative-font);
+    font-size: var(--font-small);
+}
+
+@media (max-width) {
+    .coleccionable>img {
+        width: 80%;
+        object-fit: cover;
+    }
+}
+
+/********* Nuevos Lanzamientos *******/
+
+.lanzamiento__titulo{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 700;
+}
+.card {
     font-family: var(--base-font);
-    font-size: 62.5%;
-    color: var(--dark-solid);
-    height: 100vh;
+    width: 30rem;
 }
 
-
-/*Coleccionables*/
-.Coleccionables, .Nuevo_lanzamiento > section{
-    max-width: 90vw;
+.card__titulo {
+    font-weight: 500;
+    font-size: var(--font-xsmall);
 }
 
-/*Nuevos Lanzamientos*/
-.card, .card-header{
-    border: none;
-    background-color: inherit;
+.card__subtitulo {
+    font-weight: 700;
+    font-size: var(--font-medium);
+}
+
+.card__texto {
+    font-weight: 400;
+    font-size: var(--font-small);
+}
+
+.card__link {
+    color: var(--secondary-solid);
+    font-size: var(--font-xsmall);
 }
