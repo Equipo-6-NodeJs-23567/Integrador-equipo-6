@@ -95,3 +95,61 @@ li{
 p {
     font-size: var(--font-medium);
 }
+
+/***********Coleccionables***********/
+.coleccionable,
+.lanzamiento {
+    max-width: 80vw;
+}
+
+
+.coleccionable__titulo {
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    text-transform: uppercase;
+}
+
+.coleccionable__texto {
+    font-family: var(--alternative-font);
+    font-size: var(--font-small);
+}
+
+@media (max-width) {
+    .coleccionable>img {
+        width: 80%;
+        object-fit: cover;
+    }
+}
+
+/********* Nuevos Lanzamientos *******/
+
+.lanzamiento__titulo {
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 700;
+}
+
+.card-lanzamiento {
+    font-family: var(--base-font);
+    width: 30rem;
+}
+
+.card__titulo {
+    font-weight: 500;
+    font-size: var(--font-xsmall);
+}
+
+.card__subtitulo {
+    font-weight: 700;
+    font-size: var(--font-medium);
+}
+
+.card__texto {
+    font-weight: 400;
+    font-size: var(--font-small);
+}
+
+.card__link {
+    color: var(--secondary-solid);
+    font-size: var(--font-xsmall);
+}
