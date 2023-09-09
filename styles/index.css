@@ -68,7 +68,7 @@ footer {
     color: var(--light-font-solid);
 }
 
-.banner{
+.banner {
     background-image: url('/img/funkos-banner.webp');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@ ol {
     list-style: none;
 }
 
-li{
+li {
     text-transform: uppercase;
 }
 
@@ -97,6 +97,7 @@ p {
 }
 
 /***********Coleccionables***********/
+.coleccionable-item,
 .coleccionable,
 .lanzamiento {
     max-width: 80vw;
@@ -119,6 +120,81 @@ p {
         width: 80%;
         object-fit: cover;
     }
+}
+
+/******Item Coleccionable *********/
+.coleccionable-item {
+    font-family: var(--base-font);
+}
+
+.coleccionable__item-titulo {
+    font-weight: 500;
+    font-size: var(--font-xsmall);
+    color: var(--dark-500);
+}
+
+.coleccionable__item-subtitulo {
+    font-size: var(--font-xlarge);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.coleccionable__item-texto {
+    font-size: var(--font-small);
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+
+.coleccionable__item-precio {
+    font-size: var(--font-xlarge);
+    font-weight: 400;
+
+}
+
+.coleccionable__item-link {
+    margin-top: 1.5rem;
+}
+
+.coleccionable__item-link a {
+    color: var(--secondary-solid);
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+}
+
+.coleccionable__item-btn {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.coleccionable__item-input {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: large;
+    text-align: center;
+}
+
+.operadores {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.operadores .suma {
+    background-image: url('../img/icons/+.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+
+}
+
+.operadores .resta {
+    background-image: url('../img/icons/-.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
 }
 
 /********* Nuevos Lanzamientos *******/
