@@ -56,11 +56,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: var(--base-font);
-    font-size: 62.5%;
-    color: var(--dark-solid);
-}
 
 header,
 footer {
@@ -94,4 +89,23 @@ li{
 
 p {
     font-size: var(--font-medium);
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+    height: 100vh;
+}
+
+
+/*Coleccionables*/
+.Coleccionables, .Nuevo_lanzamiento > section{
+    max-width: 90vw;
+}
+
+/*Nuevos Lanzamientos*/
+.card, .card-header{
+    border: none;
+    background-color: inherit;
 }
