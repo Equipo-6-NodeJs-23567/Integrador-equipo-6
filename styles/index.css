@@ -43,9 +43,6 @@
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
 
-    /* */
-
-
 }
 
 *,
@@ -106,7 +103,8 @@ hr {
 }
 
 /***********Coleccionables***********/
-.coleccionable {
+
+.coleccionable, .lanzamiento {
     max-width: 80vw;
 }
 
@@ -117,12 +115,52 @@ hr {
     text-transform: uppercase;
 }
 
-.coleccionable__texto{
+
+.coleccionable__texto {
     font-family: var(--alternative-font);
     font-size: var(--font-small);
 }
 
-.coleccionable__boton{
+
+@media (max-width) {
+    .coleccionable>img {
+        width: 80%;
+        object-fit: cover;
+    }
+}
+
+/********* Nuevos Lanzamientos *******/
+
+.lanzamiento__titulo{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 700;
+}
+.card {
+    font-family: var(--base-font);
+    width: 30rem;
+}
+
+.card__titulo {
+    font-weight: 500;
+    font-size: var(--font-xsmall);
+}
+
+.card__subtitulo {
+    font-weight: 700;
+    font-size: var(--font-medium);
+}
+
+.card__texto {
+    font-weight: 400;
+    font-size: var(--font-small);
+}
+
+.card__link {
+    color: var(--secondary-solid);
+    font-size: var(--font-xsmall);
+
+.coleccionable__boton {
     background-color: #30343F;
     border-radius: 50px;
     padding: 1rem 2rem;
@@ -131,9 +169,4 @@ hr {
     font-size: var(--font-small);
     font-weight: 300;
 }
-
-@media (max-width) {
-    .coleccionable>img {
-        width: 80%;
-    }
 }
