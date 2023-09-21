@@ -72,7 +72,6 @@ footer {
     color: var(--light-font-solid);
 }
 
-
 .banner {
     background-image: url('/img/funkos-banner.webp');
     background-attachment: fixed;
@@ -100,8 +99,8 @@ li {
 
 p {
     font-size: var(--font-medium);
-    word-wrap: break-word;
 }
+
 
 hr {
     border: 2px solid var(--primary-solid);
@@ -111,6 +110,7 @@ hr {
 
 /***********Coleccionables***********/
 
+.coleccionable-item,
 .coleccionable,
 .lanzamiento {
     max-width: 80vw;
@@ -123,12 +123,10 @@ hr {
     text-transform: uppercase;
 }
 
-
 .coleccionable__texto {
     font-family: var(--alternative-font);
     font-size: var(--font-small);
 }
-
 
 @media (max-width) {
     .coleccionable>img {
@@ -137,12 +135,96 @@ hr {
     }
 }
 
+
+/******Item Coleccionable *********/
+
+.coleccionable-item {
+    font-family: var(--base-font);
+}
+
+.coleccionable__item-titulo {
+    font-weight: 500;
+    font-size: var(--font-xsmall);
+    color: var(--dark-500);
+}
+
+.coleccionable__item-subtitulo {
+    font-size: var(--font-xlarge);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.coleccionable__item-texto {
+    font-size: var(--font-small);
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+
+.coleccionable__item-precio {
+    font-size: var(--font-xlarge);
+    font-weight: 400;
+
+}
+
+.coleccionable__item-link {
+    margin-top: 1.5rem;
+}
+
+.coleccionable__item-link a {
+    color: var(--secondary-solid);
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+}
+
+.coleccionable__item-btn {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.coleccionable__item-input {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: large;
+    text-align: center;
+}
+
+.operadores {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.operadores .suma {
+    background-image: url('../img/icons/+.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+
+}
+
+.operadores .resta {
+    background-image: url('../img/icons/-.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+}
+
+
 /********* Nuevos Lanzamientos *******/
 
 .lanzamiento__titulo {
     font-family: var(--alternative-font);
     font-size: var(--font-large);
     font-weight: 700;
+}
+
+
+.card-lanzamiento {
+    font-family: var(--base-font);
+    width: 30rem;
 }
 
 
@@ -164,6 +246,7 @@ hr {
 .card__link {
     color: var(--secondary-solid);
     font-size: var(--font-xsmall);
+
 }
 
 .coleccionable__boton {
@@ -175,3 +258,4 @@ hr {
     font-size: var(--font-small);
     font-weight: 300;
 }
+
