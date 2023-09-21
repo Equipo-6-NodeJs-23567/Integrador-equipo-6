@@ -27,12 +27,19 @@
 
     /* Font Size */
     --font-display: 4.6em;
+    /* 74px */
     --font-jumbo: 3.8em;
+    /* 61px */
     --font-xlarge: 3em;
+    /* 48px */
     --font-large: 2.4em;
+    /* 38px */
     --font-medium: 1.8em;
+    /* 29px */
     --font-small: 1.6em;
+    /* 26px */
     --font-xsmall: 1.2em;
+    /* 19px */
 
     /* Spacing*/
     --spacing-128: 12.8rem;
@@ -42,9 +49,6 @@
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
-
-    /* */
-
 
 }
 
@@ -81,6 +85,7 @@ a {
     font-family: inherit;
     color: inherit;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 ul,
@@ -96,7 +101,15 @@ p {
     font-size: var(--font-medium);
 }
 
+
+hr {
+    border: 2px solid var(--primary-solid);
+    max-width: 80%;
+    margin-left: 1rem;
+}
+
 /***********Coleccionables***********/
+
 .coleccionable-item,
 .coleccionable,
 .lanzamiento {
@@ -122,7 +135,9 @@ p {
     }
 }
 
+
 /******Item Coleccionable *********/
+
 .coleccionable-item {
     font-family: var(--base-font);
 }
@@ -197,6 +212,7 @@ p {
     border-radius: 3px;
 }
 
+
 /********* Nuevos Lanzamientos *******/
 
 .lanzamiento__titulo {
@@ -205,10 +221,12 @@ p {
     font-weight: 700;
 }
 
+
 .card-lanzamiento {
     font-family: var(--base-font);
     width: 30rem;
 }
+
 
 .card__titulo {
     font-weight: 500;
@@ -228,4 +246,16 @@ p {
 .card__link {
     color: var(--secondary-solid);
     font-size: var(--font-xsmall);
+
 }
+
+.coleccionable__boton {
+    background-color: #30343F;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    color: #FFFFFF;
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-weight: 300;
+}
+
