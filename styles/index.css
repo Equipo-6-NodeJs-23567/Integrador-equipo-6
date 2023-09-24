@@ -18,6 +18,7 @@
     --dark-300: rgba(31, 31, 31, 0.3);
 
     --dark-bg-solid: #30343F;
+    --light-border-solid: #919EAB;
     --light-bg-solid: #FAFAFF;
     --light-font-solid: #FFFFFF;
 
@@ -259,3 +260,158 @@ hr {
     font-weight: 300;
 }
 
+/*SideBar*/
+
+.form-container {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.price-container {
+    /* d-flex justify-content-evenly */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.input-lg {
+    width: 24rem;
+    height: 3rem;
+    padding-left: var(--spacing-8);
+    border: 2px solid var(--light-border-solid);
+    border-radius: 6px;
+}
+
+.input-xs {
+    width: 3.5rem;
+    margin-left: var(--spacing-8);
+    text-align: center;
+    border: 2px solid var(--light-border-solid);
+    border-radius: 6px;
+}
+
+.form-label {
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+
+.form-inner_label {
+    font-size: var(--font-xsmall);
+}
+
+.input-text {
+    font-size: var(--font-xsmall);
+    color: #30343F;
+    align-self: center;
+}
+
+/*Pagination*/
+
+.pagination-container a {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+
+/********** MEDIA QUERIES ********/
+
+/*Celulares*/
+
+@media (min-width: 350px) and (max-width: 790px) {
+
+    .form-container {
+        margin-top: 3rem;
+    }
+
+    .price-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-lg {
+        width: 31rem;
+        height: 3rem;
+        padding-left: var(--spacing-8);
+        border: 2px solid var(--light-border-solid);
+        border-radius: 6px;
+    }
+
+    .select {
+        font-size: var(--font-xsmall);
+        font-weight: 400;
+        color: #30343F;
+    }
+
+}
+
+
+/*Extra 800px*/
+@media (min-width:791px) and (max-width:800px) {
+    .form-container {
+        margin-top: 3rem;
+    }
+
+    .form-label {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.1rem !important;
+    }
+
+    .price-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.1rem !important;
+    }
+
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    .filter-container .filter-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .input-lg {
+        width: 31rem;
+        height: 3rem;
+        padding-left: var(--spacing-8);
+        border: 2px solid var(--light-border-solid);
+        border-radius: 6px;
+    }
+
+    .input-xs {
+        border: 2px solid var(--light-border-solid);
+        border-radius: 6px;
+    }
+
+    .select {
+        font-size: var(--font-xsmall);
+        font-weight: 400;
+        color: #30343F;
+        width: 31rem;
+        margin-left: 18rem;
+    }
+}
+
+
+
+
+/*Tablets*/
+@media (min-width: 801px) and (max-width: 1300px) {}
+
+
+
+
+/*PC o Tv's*/
+@media (min-width: 1301px) and (max-width: 1800px) {}
