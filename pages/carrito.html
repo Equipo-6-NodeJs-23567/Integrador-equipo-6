@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARRITO</title>
+  </head>
+  <body>
+    <main>
+      <h2 class="titulo-carrito">CARRITO DE COMPRAS</h2>
+      <section class="carrito">
+        <header class="carrito-header">
+          <ul class="carrito-header-tittle">
+            <li class="carrito-header-item">DETALLE DE PRODUCTO</li>
+            <li class="carrito-header-item">CANTIDAD</li>
+            <li class="carrito-header-item">TOTAL</li>
+          </ul>
+        </header>
+        <section class="carrito-productos">
+          <article class="carrito-items">
+            <div class="detalle-item">
+              <img
+                src="../img/star-wars/baby-yoda-1.webp"
+                alt="Funko Baby Yoda"
+                class="imagen-item"
+              />
+              <h3 class="nombre-item">BABY YODA BLUEBALL</h3>
+              <p class="tema-item">STAR WARS</p>
+              <p class="precio-item">precio: $1799,99</p>
+            </div>
+            <div class="cantidad-item">
+              <input
+                type="number"
+                name="cantidad-compra"
+                id="cantidad-compra"
+              />
+            </div>
+            <div class="total-item">$ 3599,98</div>
+            <div class="remove-item">
+              <a href=""
+                ><iconify-icon icon="clarity:remove-line"></iconify-icon
+              ></a>
+            </div>
+          </article>
+          <article class="carrito-items">
+            <div class="detalle-item">
+              <img
+                src="../img/pokemon/pidgeotto-1.webp"
+                alt="Funko Pidgeotto"
+                class="imagen-item"
+              />
+              <h3 class="nombre-item">PIDGEOTTO</h3>
+              <p class="tema-item">POKEMON</p>
+              <p class="precio-item">precio: $1799,99</p>
+            </div>
+            <div class="cantidad-item">
+              <input
+                type="number"
+                name="cantidad-compra"
+                id="cantidad-compra"
+              />
+            </div>
+            <div class="total-item">$ 1799,99</div>
+            <div class="remove-item">
+              <a href=""
+                ><iconify-icon icon="clarity:remove-line"></iconify-icon
+              ></a>
+            </div>
+          </article>
+        </section>
+      </section>
+      <section class="resumen-carrito">
+        <h2 class="titulo-resumen-carrito">RESUMEN</h2>
+        <div class="cuadro-resumen-carrito">
+          <p class="titulos-resumen">
+            <span class="elementos-resumen">CANTIDAD DE ELEMENTOS</span>
+          </p>
+          <span class="numero-elementos-resumen">3</span>
+          <p class="titulos-resumen">
+            <span class="elementos-resumen">SUBTOTAL</span>
+          </p>
+          <span class="numero-elementos-resumen">$ 5.399,97</span>
+          <p class="titulos-resumen">
+            <span class="elementos-resumen">ENVIO</span>
+          </p>
+          <span class="numero-elementos-resumen">$0,00</span>
+          <hr />
+          <p class="titulos-resumen">
+            <span class="elementos-resumen">TOTAL</span>
+          </p>
+          <span class="numero-elementos-resumen">$ 5.399,97</span>
+        </div>
+        <button class="pagar-compra">IR A PAGAR</button>
+      </section>
+    </main>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>
